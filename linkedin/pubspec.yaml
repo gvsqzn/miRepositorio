@@ -1,13 +1,12 @@
-name: vasquez_flutter
+name: linkedin
 description: A new Flutter project.
 publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: '>=3.0.6 <4.0.0'
+  sdk: '>=3.1.1 <4.0.0'
 
 dependencies:
-  flex_color_scheme: ^7.3.1
   flutter:
     sdk: flutter
 
@@ -18,9 +17,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
- assets:
-   - assets/guitarra.jpg
-   - assets/bajo.jpeg
-   - assets/piano.jpeg
-   - assets/bateria.jpeg
