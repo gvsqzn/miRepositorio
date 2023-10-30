@@ -93,6 +93,8 @@ class MyApp extends StatelessWidget {
                 color: Color.fromARGB(255, 255, 255, 255),
               ),
 
+              
+
               Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
                 children: [
                   Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
@@ -110,76 +112,12 @@ class MyApp extends StatelessWidget {
                   Expanded(
                     flex: 6, //segunda división de la superficie, ROW
                     child: Container(
-                      height: 128.0,
+                      height: 64.0,
                       color: const Color(0xFFFB6900), // Color en formato hexadecimal
                     ),
                   ),
                 ],
               ),
-
-
-
-              const Divider( //Nuevo separador horizontal
-                height: 4.0,
-                color: Color.fromARGB(255, 255, 255, 255),
-              ),
-
- Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
-                children: [
-                  Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
-                    flex: 1, //primera división de la superficier, ROW
-                    child: Container(// acá se construye, el contenido de esa superficie previamente formateada.
-                      height: 64.0, //con alto de 48 pixeles
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-
-
-                  const SizedBox(width: 4.0), //separador vertical
-
-
-                  Expanded(
-                    flex: 6, //segunda división de la superficie, ROW
-                    child: Container(
-                      height: 128.0,
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-                ],
-              ),
-
-
-
-              const Divider( //Nuevo separador horizontal
-                height: 4.0,
-                color: Color.fromARGB(255, 255, 255, 255),
-              ),
-
- Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
-                children: [
-                  Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
-                    flex: 1, //primera división de la superficier, ROW
-                    child: Container(// acá se construye, el contenido de esa superficie previamente formateada.
-                      height: 64.0, //con alto de 48 pixeles
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-
-
-                  const SizedBox(width: 4.0), //separador vertical
-
-
-                  Expanded(
-                    flex: 6, //segunda división de la superficie, ROW
-                    child: Container(
-                      height: 128.0,
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-                ],
-              ),
-
-
 
               const Divider( //Nuevo separador horizontal
                 height: 4.0,
@@ -188,37 +126,138 @@ class MyApp extends StatelessWidget {
 
               Container(//superficie azul, de acá en adelante todo será un container
                 color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                height: 64.0, //alto
+                height: 48.0, //alto
                 width: double.infinity, //ancho, al infinito y más allá
               ),
 
-                            const Divider( //Nuevo separador horizontal
+              const Divider( //Nuevo separador horizontal
                 height: 4.0,
                 color: Color.fromARGB(255, 255, 255, 255),
               ),
 
-
-
-              Container(//superficie azul, de acá en adelante todo será un container
-                color: const Color(0xFF023047), // Color en formato hexadecimal
-                height: 300.0, //alto
-                width: double.infinity, //ancho, al infinito y más allá
-              ),
-
-
-              const Divider(//para separar del siguiente container, es horizontal
-                height: 4.0, //dos pixeles de alto
-                color: Color.fromARGB(255, 255, 255, 255),//color
-              ),
-
-
-              Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
+               Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
                 children: [
                   Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
                     flex: 1, //primera división de la superficier, ROW
                     child: Container(// acá se construye, el contenido de esa superficie previamente formateada.
-                      height: 48.0, //con alto de 48 pixeles
-                      color: const Color(0xFF8EDBCE), // Color en formato hexadecimal
+                      height: 64.0, //con alto de 48 pixeles
+                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
+                    ),
+                  ),
+
+
+                  const SizedBox(width: 4.0), //separador vertical
+
+
+                  Expanded(
+                    flex: 6, //segunda división de la superficie, ROW
+                    child: Container(
+                      height: 64.0,
+                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
+                    ),
+                  ),
+                ],
+              ),
+
+        const Divider( //Nuevo separador horizontal
+                height: 4.0,
+                color: Color.fromARGB(255, 255, 255, 255),
+              ),
+
+               Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
+                children: [
+                  Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
+                    flex: 1, //primera división de la superficier, ROW
+                    child: Container(// acá se construye, el contenido de esa superficie previamente formateada.
+                      height: 64.0, //con alto de 48 pixeles
+                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
+                    ),
+                  ),
+
+
+                  const SizedBox(width: 4.0), //separador vertical
+
+
+                  Expanded(
+                    flex: 6, //segunda división de la superficie, ROW
+                    child: Container(
+                      height: 64.0,
+                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
+                    ),
+                  ),
+                ],
+              ),
+
+               const Divider( //Nuevo separador horizontal
+                height: 4.0,
+                color: Color.fromARGB(255, 255, 255, 255),
+              ),
+
+               Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
+                children: [
+                  Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
+                    flex: 1, //primera división de la superficier, ROW
+                    child: Container(// acá se construye, el contenido de esa superficie previamente formateada.
+                      height: 64.0, //con alto de 48 pixeles
+                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
+                    ),
+                  ),
+
+
+                  const SizedBox(width: 4.0), //separador vertical
+
+
+                  Expanded(
+                    flex: 6, //segunda división de la superficie, ROW
+                    child: Container(
+                      height: 64.0,
+                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
+                    ),
+                  ),
+                ],
+              ),
+
+               const Divider( //Nuevo separador horizontal
+                height: 4.0,
+                color: Color.fromARGB(255, 255, 255, 255),
+              ),
+
+               Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
+                children: [
+                  Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
+                    flex: 1, //primera división de la superficier, ROW
+                    child: Container(// acá se construye, el contenido de esa superficie previamente formateada.
+                      height: 64.0, //con alto de 48 pixeles
+                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
+                    ),
+                  ),
+
+
+                  const SizedBox(width: 4.0), //separador vertical
+
+
+                  Expanded(
+                    flex: 6, //segunda división de la superficie, ROW
+                    child: Container(
+                      height: 64.0,
+                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
+                    ),
+                  ),
+                ],
+              ),
+
+               const Divider( //Nuevo separador horizontal
+                height: 4.0,
+                color: Color.fromARGB(255, 255, 255, 255),
+              ),
+
+               Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
+                children: [
+                  Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
+                    flex: 1, //primera división de la superficier, ROW
+                    child: Container(// acá se construye, el contenido de esa superficie previamente formateada.
+                      height: 64.0, //con alto de 48 pixeles
+                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
                     ),
                   ),
 
@@ -229,65 +268,22 @@ class MyApp extends StatelessWidget {
                   Expanded(
                     flex: 1, //segunda división de la superficie, ROW
                     child: Container(
-                      height: 48.0,
-                      color: const Color(0xFF8EDBCE), // Color en formato hexadecimal
-                    ),
-                  ),
-                ],
-              ),
-
-
-
-              const Divider( //Nuevo separador horizontal
-                height: 4.0,
-                color: Color.fromARGB(255, 255, 255, 255),
-              ),
-
-
-
-              //Nueva declaración de fila, tendrá 4 subdivisiones
-              Row(
-                children: [
-                  Expanded(
-                    flex: 1,
-                    child: Container(
-                      height: 96.0,
-                      color: const Color(0xFFE9DDFF), // Color en formato hexadecimal
-                    ),
-                  ),
-
-
-                  const SizedBox(width: 4.0), //separación vertical
-
-                  Expanded(
-                    flex: 1,
-                    child: Container(
-                      height: 96.0,
-                      color: const Color(0xFFE9DDFF), // Color en formato hexadecimal
-                    ),
-                  ),
-
-                  const SizedBox(width: 4.0), //separación vertical
-
-                  Expanded(
-                    flex: 1,
-                    child: Container(
-                      height: 96.0,
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-
-                  const SizedBox(width: 4.0),//separación vertical
-
-                  Expanded(
-                    flex: 1,
-                    child: Container(
-                      height: 96.0,
+                      height: 64.0,
                       color: const Color(0xFFFB6900), // Color en formato hexadecimal
                     ),
                   ),
                 ],
               ),
+
+
+
+
+
+ 
+  
+
+
+              
 
 
             
