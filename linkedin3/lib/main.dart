@@ -1,327 +1,206 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
+
 void main() {
-  runApp(const MyApp());
+  runApp(const MainApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(//Acá comienza el Appbar
-          backgroundColor: const Color(0xFF023047), //color de fondo, a mano, luego se puede integrar a flex_color
-          leading: const Icon(Icons.menu), //ubicación del ícono de navegación
-          title: const Text('Refuerzo'), //título de la app
-          actions: [//iconos búsqueda y more_vert
-            IconButton(
-              icon: const Icon(Icons.search),
-              onPressed: () {
-                // Acción para el ícono de búsqueda
-              },
-            ),
-            IconButton(
-              icon: const Icon(Icons.more_vert),
-              onPressed: () {
-                // Acción para el ícono "more_vert"
-              },
-            ),
-          ],
-        ),// Acá termina el AppBar
-
-
-
-
-
-        body: SingleChildScrollView( //Permite eventualemnte desplazarse a un punto x en el scroll.
-
-          child: Column( //será una columna vertical, navegamos verticalmente
-
-            children: [
-
- Container(//superficie azul, de acá en adelante todo será un container
-                color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                height: 48.0, //alto
-                width: double.infinity, //ancho, al infinito y más allá
-              ),
-
-
-              const Divider(//para separar del siguiente container, es horizontal
-                height: 4.0, //dos pixeles de alto
-                color: Color.fromARGB(255, 255, 255, 255),//color
-              ),
-
-              Container(//superficie azul, de acá en adelante todo será un container
-                color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                height: 48.0, //alto
-                width: double.infinity, //ancho, al infinito y más allá
-              ),
-
-              const Divider(//para separar del siguiente container, es horizontal
-                height: 4.0, //dos pixeles de alto
-                color: Color.fromARGB(255, 255, 255, 255),//color
-              ),
-
-               Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
-                children: [
-                  Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
-                    flex: 2, //primera división de la superficier, ROW
-                    child: Container(// acá se construye, el contenido de esa superficie previamente formateada.
-                      height: 64.0, //con alto de 48 pixeles
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-
-
-                  const SizedBox(width: 4.0), //separador vertical
-
-
-                  Expanded(
-                    flex: 1, //segunda división de la superficie, ROW
-                    child: Container(
-                      height: 64.0,
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-                ],
-              ),
-
-            const Divider( //Nuevo separador horizontal
-                height: 4.0,
-                color: Color.fromARGB(255, 255, 255, 255),
-              ),
-
-              
-
-              Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
-                children: [
-                  Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
-                    flex: 1, //primera división de la superficier, ROW
-                    child: Container(// acá se construye, el contenido de esa superficie previamente formateada.
-                      height: 64.0, //con alto de 48 pixeles
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-
-
-                  const SizedBox(width: 4.0), //separador vertical
-
-
-                  Expanded(
-                    flex: 6, //segunda división de la superficie, ROW
-                    child: Container(
-                      height: 64.0,
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-                ],
-              ),
-
-              const Divider( //Nuevo separador horizontal
-                height: 4.0,
-                color: Color.fromARGB(255, 255, 255, 255),
-              ),
-
-              Container(//superficie azul, de acá en adelante todo será un container
-                color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                height: 48.0, //alto
-                width: double.infinity, //ancho, al infinito y más allá
-              ),
-
-              const Divider( //Nuevo separador horizontal
-                height: 4.0,
-                color: Color.fromARGB(255, 255, 255, 255),
-              ),
-
-               Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
-                children: [
-                  Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
-                    flex: 1, //primera división de la superficier, ROW
-                    child: Container(// acá se construye, el contenido de esa superficie previamente formateada.
-                      height: 64.0, //con alto de 48 pixeles
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-
-
-                  const SizedBox(width: 4.0), //separador vertical
-
-
-                  Expanded(
-                    flex: 6, //segunda división de la superficie, ROW
-                    child: Container(
-                      height: 64.0,
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-                ],
-              ),
-
-        const Divider( //Nuevo separador horizontal
-                height: 4.0,
-                color: Color.fromARGB(255, 255, 255, 255),
-              ),
-
-               Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
-                children: [
-                  Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
-                    flex: 1, //primera división de la superficier, ROW
-                    child: Container(// acá se construye, el contenido de esa superficie previamente formateada.
-                      height: 64.0, //con alto de 48 pixeles
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-
-
-                  const SizedBox(width: 4.0), //separador vertical
-
-
-                  Expanded(
-                    flex: 6, //segunda división de la superficie, ROW
-                    child: Container(
-                      height: 64.0,
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-                ],
-              ),
-
-               const Divider( //Nuevo separador horizontal
-                height: 4.0,
-                color: Color.fromARGB(255, 255, 255, 255),
-              ),
-
-               Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
-                children: [
-                  Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
-                    flex: 1, //primera división de la superficier, ROW
-                    child: Container(// acá se construye, el contenido de esa superficie previamente formateada.
-                      height: 64.0, //con alto de 48 pixeles
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-
-
-                  const SizedBox(width: 4.0), //separador vertical
-
-
-                  Expanded(
-                    flex: 6, //segunda división de la superficie, ROW
-                    child: Container(
-                      height: 64.0,
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-                ],
-              ),
-
-               const Divider( //Nuevo separador horizontal
-                height: 4.0,
-                color: Color.fromARGB(255, 255, 255, 255),
-              ),
-
-               Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
-                children: [
-                  Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
-                    flex: 1, //primera división de la superficier, ROW
-                    child: Container(// acá se construye, el contenido de esa superficie previamente formateada.
-                      height: 64.0, //con alto de 48 pixeles
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-
-
-                  const SizedBox(width: 4.0), //separador vertical
-
-
-                  Expanded(
-                    flex: 6, //segunda división de la superficie, ROW
-                    child: Container(
-                      height: 64.0,
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-                ],
-              ),
-
-               const Divider( //Nuevo separador horizontal
-                height: 4.0,
-                color: Color.fromARGB(255, 255, 255, 255),
-              ),
-
-               Row( //una fila que tiene dos columnas, separadas por una línea, alto 48 píxeles
-                children: [
-                  Expanded(//cada expanded es una columna al interior del container, se construye el container en su interior
-                    flex: 1, //primera división de la superficier, ROW
-                    child: Container(// acá se construye, el contenido de esa superficie previamente formateada.
-                      height: 64.0, //con alto de 48 pixeles
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-
-
-                  const SizedBox(width: 4.0), //separador vertical
-
-
-                  Expanded(
-                    flex: 1, //segunda división de la superficie, ROW
-                    child: Container(
-                      height: 64.0,
-                      color: const Color(0xFFFB6900), // Color en formato hexadecimal
-                    ),
-                  ),
-                ],
-              ),
-
-
-
-
-
- 
-  
-
-
-              
-
-
-            
-
-
-              
-                ],
-           
+      theme: MyTheme.lightTheme(),
+      home: const SplashScreen(),
+    );
+  }
+}
+
+class HomeApp extends StatefulWidget {
+  const HomeApp({Key? key}) : super(key: key);
+
+  @override
+  // ignore: library_private_types_in_public_api
+  _HomeAppState createState() => _HomeAppState();
+}
+
+class _HomeAppState extends State<HomeApp> with SingleTickerProviderStateMixin {
+  late TabController _tabController;
+
+  bool _isChatsTabActive = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(length: 4, vsync: this);
+    _tabController.addListener(_handleTabSelection);
+  }
+
+  void _handleTabSelection() {
+    setState(() {
+      _isChatsTabActive = _tabController.index == 1;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'Whatsapp',
+          style: TextStyle(
+            fontSize: 20,
           ),
-        ), // Se cierra el body
-
-
-
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: const Color(0xFF023047), //color de fondo, a mano, luego se puede integrar a flex_color
-
-          items: const [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home, color: Colors.white), // Icono blanco
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.add, color: Colors.white), // Icono blanco
-              label: 'Add',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.search, color: Colors.white), // Icono blanco
-              label: 'Search',
-            ),
-          ],
-          selectedItemColor: Colors.white, // Color del texto seleccionado en blanco
-          unselectedItemColor: const Color.fromARGB(255, 103, 102, 102), // Color de íconos no seleccionados
-
-
         ),
-      ),//Se cierra SCaffold
-    );//Se cierra MaterialApp
-  }//Se cierra el Widget Build contexts
-}// se cierra la clase
+        actions: <Widget>[
+          IconButton(
+            color: Colors.white,
+            icon: const Icon(Icons.camera_alt_outlined),
+            onPressed: () {
+              if (kDebugMode) {
+                print('Icono de persona presionado!');
+              }
+            },
+          ),
+          IconButton(
+            color: Colors.white,
+            icon: const Icon(Icons.search),
+            onPressed: () {
+              if (kDebugMode) {
+                print('Icono de persona presionado!');
+              }
+            },
+          ),
+          IconButton(
+            color: Colors.white,
+            icon: const Icon(Icons.more_vert),
+            onPressed: () {
+              if (kDebugMode) {
+                print('Icono de persona presionado!');
+              }
+            },
+          ),
+        ],
+        bottom: TabBar(
+          controller: _tabController,
+          tabs: [
+            _buildTab('Grupos', 0),
+            _buildTabWithNumberAndColor('Chats', 5, _isChatsTabActive), // Agregar el círculo
+            _buildTab('Novedades', 2),
+            _buildTab('Llamadas', 3),
+          ],
+          labelColor: Colors.white,
+          unselectedLabelColor: MyTheme.lightTheme().colorScheme.secondary,
+          labelStyle: const TextStyle(
+            fontSize: 14,
+          ),
+        ),
+      ),
+      body: Column(
+        children: [
+          Container(
+            width: double.infinity,
+            height: 50,
+            color: Colors.white,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 16.0),
+                  child: Icon(
+                    Icons.archive_outlined,
+                    color: MyTheme.lightTheme().colorScheme.primary,
+                    size: 24,
+                  ),
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(left: 12.0),
+                  child: Text(
+                    'Archivados',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 12,
+                    ),
+                  ),
+                ),
+                const Spacer(),
+              ],
+            ),
+          ),
+          Expanded(
+            child: TabBarView(
+              controller: _tabController,
+               children: <Widget>[
+      const Center(
+        child: Text('Pestaña de Grupos'),
+      ),
+      ListView.builder(
+        itemCount: 20,
+        itemBuilder: (context, index) {
+          return ListTile(
+            leading: CircleAvatar(
+              backgroundColor: MyTheme.lightTheme().colorScheme.primary,
+            ),
+            title: const Text('Beethoven'),
+            trailing: const Icon(Icons.more_vert),
+          );
+        },
+      ),
+      const Center(
+        child: Text('Pestaña de Novedades'),
+      ),
+      const Center(
+        child: Text('Pestaña de Llamadas'),
+      ),
+    ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 
+  Widget _buildTab(String title, int index) {
+    return Tab(
+      child: Text(title),
+    );
+  }
 
+  Widget _buildTabWithNumberAndColor(String title, int number, bool isActive) {
+    final circleColor = isActive
+        ? Colors.white
+        : MyTheme.lightTheme().colorScheme.tertiary;
+
+    return Tab(
+      child: Row(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 12),
+            child: Text(title, style: const TextStyle(fontSize: 14)),
+          ),
+          const SizedBox(width: 4),
+          Container(
+            width: 14,
+            height: 14,
+            decoration: BoxDecoration(
+              color: circleColor,
+              shape: BoxShape.circle,
+            ),
+            child: Center(
+              child: Text(
+                number.toString(),
+                style: TextStyle(
+                  color: MyTheme.lightTheme().colorScheme.primary,
+                  fontSize: 12,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}

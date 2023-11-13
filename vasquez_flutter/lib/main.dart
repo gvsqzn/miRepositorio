@@ -183,7 +183,7 @@ class HomeApp extends StatelessWidget {
           ),
           ListTile(
             leading: const CircleAvatar(
-                child: Text('7'), backgroundColor: Color.fromARGB(255, 225, 255, 0)),
+                child: Text('poto'), backgroundColor: Color.fromARGB(255, 225, 255, 0)),
             title: const Text('Violín'),
             subtitle: const Text('Subtítulo del Item 7'),
             trailing: IconButton(
