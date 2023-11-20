@@ -33,7 +33,7 @@ Widget buildDetailScreen(BuildContext context, DetailScreenData data) {
 Widget llamadasItem(BuildContext context, String title) {
 
   return Card(
-  child: new InkWell(
+  child: InkWell(
     onTap: () {
      Navigator.push(
         context,
@@ -49,7 +49,7 @@ Widget llamadasItem(BuildContext context, String title) {
 
 
 
-     child: ListTile(
+     child: const ListTile(
       
               contentPadding: EdgeInsets.fromLTRB(30,100,10,10),
               title: Text('Desarrollo de aplicaciones moviles'),
@@ -70,17 +70,17 @@ Widget llamadasItem(BuildContext context, String title) {
 
 Widget mails(BuildContext context, String title) {
 
-  return Card(
+  return const Card(
    child: ListTile(
                       leading: CircleAvatar(
                         backgroundImage: AssetImage('assets/trinidad.jpg'),
                       ),
-                      title: const Text('TRINIDAD ALVARADO LA...'),
-                      subtitle: const Text('Correcion'),
+                      title: Text('TRINIDAD ALVARADO LA...'),
+                      subtitle: Text('Correcion'),
                       subtitleTextStyle: TextStyle(
                         fontSize: 10,
                       ),
-                      trailing: const Text(
+                      trailing: Text(
                         '7 oct 2023',
                         style: TextStyle(
                           color: Colors.grey,
@@ -97,17 +97,17 @@ Widget mails(BuildContext context, String title) {
 
 Widget mails2(BuildContext context, String title) {
 
-return Card(
+return const Card(
   child: ListTile(
                       leading: CircleAvatar(
                         backgroundImage: AssetImage('assets/profe.jpg'),
                       ),
-                      title: const Text('FERNANDA PAZ FONTEC...'),
-                      subtitle: const Text('Retroalimentacion semana 10'),
+                      title: Text('FERNANDA PAZ FONTEC...'),
+                      subtitle: Text('Retroalimentacion semana 10'),
                       subtitleTextStyle: TextStyle(
                         fontSize: 10,
                       ),
-                      trailing: const Text(
+                      trailing: Text(
                         '16 oct 2023',
                         style: TextStyle(
                           color: Colors.grey,

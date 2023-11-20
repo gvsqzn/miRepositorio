@@ -62,9 +62,9 @@ class _HomeAppState extends State<HomeApp> {
          
          
           
-          /* POR CADA PANTALLA NUEVA O NAVEGACIÓN SE DEBE AGREGAR UN NUEVO CustomScrollVIew, EVIDENTEMENTE LOS MIEMBROS VIENEN DE ITEMS.DART
-          Habría que crear nuevos items u objetos
-          ESTE ES UN CUSTOMSCROLLVIEW NUEVO, CON EL TÍTULO COORDINADORES*/
+          /* POR CADA PANTALLA NUEVA O NAVEGACIÃ“N SE DEBE AGREGAR UN NUEVO CustomScrollVIew, EVIDENTEMENTE LOS MIEMBROS VIENEN DE ITEMS.DART
+          HabrÃ­a que crear nuevos items u objetos
+          ESTE ES UN CUSTOMSCROLLVIEW NUEVO, CON EL TÃTULO COORDINADORES*/
           CustomScrollView(
             slivers: [
               SliverAppBar(
@@ -84,7 +84,7 @@ class _HomeAppState extends State<HomeApp> {
                     icon: const Icon(Icons.add_box_outlined),
                     onPressed: () {
                       if (kDebugMode) {
-                        print('Icono de búsqueda presionado!');
+                        print('Icono de bÃºsqueda presionado!');
                       }
                     },
                   ),
@@ -94,7 +94,7 @@ class _HomeAppState extends State<HomeApp> {
                 pinned: false,
                 expandedHeight: 20.0,
               ),    SliverAppBar(
-            backgroundColor: const Color(0xffffffff),
+            backgroundColor: Color(0xffffffff),
                 title: const Text(
           'Cursos',
           style: TextStyle(
@@ -109,7 +109,7 @@ class _HomeAppState extends State<HomeApp> {
                     icon: const Icon(Icons.add_box_outlined),
                     onPressed: () {
                       if (kDebugMode) {
-                        print('Icono de búsqueda presionado!');
+                        print('Icono de bÃºsqueda presionado!');
                       }
                     },
                   ),
@@ -123,7 +123,7 @@ class _HomeAppState extends State<HomeApp> {
                 delegate: SliverChildListDelegate(
                   [
                     
-                    llamadasItem(context, ''), //acá conviene crear un nuevo elemento en items.dart
+                    llamadasItem(context, ''), //ACÃ AGREGA UN TEXTO PARA QUE EL APPBAR TENGA NOMBRE
                     llamadasItem(context, ''),
                     llamadasItem(context, ''),
                   ],
@@ -137,9 +137,9 @@ class _HomeAppState extends State<HomeApp> {
  
 CustomScrollView(
             slivers: [
-              const SliverAppBar(
-        leading: Icon(Icons.menu),
-        title: Text(
+              SliverAppBar(
+        leading: const Icon(Icons.menu),
+        title: const Text(
           'Bandeja de entrada',
           style: TextStyle(
             fontSize: 16,
@@ -148,9 +148,9 @@ CustomScrollView(
         
               ),
 
-              const SliverAppBar(
+              SliverAppBar(
             backgroundColor: Color(0xffffffff),
-                title: Text(
+                title: const Text(
           'Todos los cursos',
           
           style: TextStyle(
@@ -200,9 +200,9 @@ CustomScrollView(
           _navigateToPage(index);
         },
       ),
-      /*SE HA MODIFICADO EL BOTTOM BAR, AL COMIENZO DEL CÓDIGO ESTÁN Los INDEX DE LAS PANTALLAS, SE PUEDE DEJAR NAVEGACIÓN MEDIANTE GESTO E ÍCONO
-      HAY QUE REDEFINIR EL NOMBRE DE LAS PANTALLAS, RECUERDA QUE LOS ITEMS ESTÁN EN EN ARCHIVO ITEMS.DART
-      AL NAVEGAR TE DARÁS CUENTA QUE REPITE LA ÚLTIMA NAVEGACIÓN, ESO ES PORQUE FALTA UN CustomScrollView, se agregó uno nuevo, coordinadores, más arriba*/
+      /*SE HA MODIFICADO EL BOTTOM BAR, AL COMIENZO DEL CÃ“DIGO ESTÃN Los INDEX DE LAS PANTALLAS, SE PUEDE DEJAR NAVEGACIÃ“N MEDIANTE GESTO E ÃCONO
+      HAY QUE REDEFINIR EL NOMBRE DE LAS PANTALLAS, RECUERDA QUE LOS ITEMS ESTÃN EN EN ARCHIVO ITEMS.DART
+      AL NAVEGAR TE DARÃS CUENTA QUE REPITE LA ÃšLTIMA NAVEGACIÃ“N, ESO ES PORQUE FALTA UN CustomScrollView, se agregÃ³ uno nuevo, coordinadores, mÃ¡s arriba*/
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentPage,
         onTap: _navigateToPage,
